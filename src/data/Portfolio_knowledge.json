@@ -1,0 +1,168 @@
+{
+    "profile": {
+        "identity": "Self-taught developer focused on fundamentals, system boundaries, and long-term correctness over speed or trends.",
+        "summary": "A developer shaped by debugging, constraints, and deliberate system design rather than shortcuts or heavy abstractions."
+    },
+    "philosophy": {
+        "core_principles": [
+            "Fundamentals before frameworks",
+            "Explicit behavior over hidden magic",
+            "Deletion is progress",
+            "Boundaries are more important than features",
+            "Every bug reveals a false assumption"
+        ],
+        "beliefs": [
+            "Software is a system of contracts",
+            "Errors must be observable",
+            "Failures are first-class citizens",
+            "Transparency beats visual beauty"
+        ]
+    },
+    "learning_journey": {
+        "phases": [
+            {
+                "name": "Foundations",
+                "technologies": [
+                    "Java",
+                    "Swing",
+                    "SQL"
+                ],
+                "focus": [
+                    "Object-oriented thinking",
+                    "Event-driven programming",
+                    "UI development",
+                    "Database persistence"
+                ],
+                "struggles": [
+                    "Event listeners not firing",
+                    "Broken UI layouts",
+                    "Mixing UI logic with business logic",
+                    "Database mismatches"
+                ],
+                "lessons": [
+                    "Understanding control flow is mandatory",
+                    "UI code must not own business logic",
+                    "Debugging is a discipline, not a reaction"
+                ],
+                "key_quote": "If you don’t understand control flow, the program controls you."
+            },
+            {
+                "name": "Backend Fundamentals",
+                "technologies": [
+                    "Node.js (pure)",
+                    "HTTP",
+                    "File System",
+                    "Process",
+                    "Events"
+                ],
+                "focus": [
+                    "Raw HTTP servers",
+                    "Manual routing",
+                    "CORS handling",
+                    "Authentication extraction",
+                    "Error handling"
+                ],
+                "struggles": [
+                    "Forgetting to end HTTP responses",
+                    "CORS preflight failures",
+                    "Duplicate enum definitions across layers",
+                    "Missing imports causing runtime failures"
+                ],
+                "lessons": [
+                    "Every request must terminate",
+                    "Infrastructure code must be predictable",
+                    "Domain logic must not leak into transport layers"
+                ],
+                "key_quote": "Every request must end with a response — no exceptions."
+            },
+            {
+                "name": "Systems Thinking",
+                "project": "Equb Management System",
+                "focus": [
+                    "Role separation",
+                    "Domain-driven boundaries",
+                    "Auditability",
+                    "Explicit state transitions",
+                    "MVP discipline"
+                ],
+                "design_decisions": [
+                    "Strict MVP scope",
+                    "Admin as steward",
+                    "Collector as executor",
+                    "Member as observer",
+                    "No chat, wallet, QR, or analytics features"
+                ],
+                "struggles": [
+                    "Resisting feature creep",
+                    "Avoiding over-engineering",
+                    "Saying no to non-essential features"
+                ],
+                "lessons": [
+                    "Smaller correct systems beat beautiful lies",
+                    "Discipline is an engineering skill",
+                    "Clarity scales better than complexity"
+                ],
+                "key_quote": "A smaller correct system beats a beautiful lie."
+            },
+            {
+                "name": "AI & Machine Learning Transition",
+                "technologies": [
+                    "Python",
+                    "Machine Learning"
+                ],
+                "focus": [
+                    "Data representation",
+                    "Model behavior",
+                    "Understanding limitations",
+                    "Math-driven reasoning"
+                ],
+                "beliefs": [
+                    "AI is engineering, not magic",
+                    "If the data or math is unclear, the output cannot be trusted"
+                ],
+                "key_quote": "If I don’t understand the math or data, I don’t trust the output."
+            }
+        ]
+    },
+    "debugging_style": {
+        "approach": [
+            "Read full error messages",
+            "Trace execution paths",
+            "Verify assumptions at boundaries",
+            "Use logs as contracts",
+            "Fix root causes, not symptoms"
+        ],
+        "avoid": [
+            "Blind trial-and-error",
+            "Copy-paste fixes",
+            "Silencing errors",
+            "Magic configuration changes"
+        ],
+        "belief": "A system that fails silently is already broken."
+    },
+    "engineering_values": {
+        "priorities": [
+            "Correctness over cleverness",
+            "Readability over brevity",
+            "Explicitness over convenience",
+            "Predictability over novelty"
+        ],
+        "preferences": [
+            "Simple data structures",
+            "Clear state transitions",
+            "Boring infrastructure",
+            "Observable failures"
+        ]
+    },
+    "current_direction": {
+        "focus": "AI and Machine Learning with strong engineering foundations",
+        "motivation": [
+            "Understand how decisions are made",
+            "Build data-driven systems",
+            "Avoid treating AI as a black box"
+        ]
+    },
+    "portfolio_statement": {
+        "closing": "I build systems that can be understood, debugged, and trusted — even under failure."
+    }
+}
