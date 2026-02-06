@@ -2,11 +2,16 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const { theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setMounted(true);
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
@@ -33,9 +38,12 @@ const Navbar = () => {
     const navLinks = [
         { name: 'About', id: 'about' },
         { name: 'Projects', id: 'projects' },
-        { name: 'Skills', id: 'skills' },
-        { name: 'Contact', id: 'contact' }
+        { name: 'Skills', id: 'skills' }
     ];
+
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+    };
 
     return (
         <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
@@ -50,7 +58,7 @@ const Navbar = () => {
                         className="text-2xl font-black tracking-tighter text-primary cursor-pointer hover:opacity-80 transition-opacity"
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     >
-                        Orion🌙
+                        Awol Ibrahim Ayalew
                     </span>
                     <div className="hidden md:flex items-center gap-2">
                         {navLinks.map((link) => (
@@ -69,9 +77,34 @@ const Navbar = () => {
                         >
                             Let's Talk
                         </Button>
+                        <Button
+                            variant="ghost"
+                            size="icon"
+                            onClick={toggleTheme}
+                            className="rounded-full ml-2 text-foreground/70 hover:text-primary hover:bg-primary/5 transition-all duration-300"
+                            aria-label="Toggle theme"
+                        >
+                            {mounted && (theme === 'dark' ? (
+                                <Sun className="h-5 w-5" />
+                            ) : (
+                                <Moon className="h-5 w-5" />
+                            ))}
+                        </Button>
                     </div>
-                    <div className="md:hidden">
+                    <div className="md:hidden flex items-center gap-2">
                         <Button variant="ghost" className="rounded-full">Menu</Button>
+                        <Button
+                            variant="ghost"
+                            size="icon"
+                            onClick={toggleTheme}
+                            className="rounded-full text-foreground/70"
+                        >
+                            {mounted && (theme === 'dark' ? (
+                                <Sun className="h-5 w-5" />
+                            ) : (
+                                <Moon className="h-5 w-5" />
+                            ))}
+                        </Button>
                     </div>
                 </div>
             </nav>

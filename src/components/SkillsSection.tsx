@@ -31,7 +31,7 @@ const SkillsSection = () => {
     {
       title: "Developer Experience",
       icon: <Wrench className="h-6 w-6" />,
-      skills: ["Git", "Docker", "Vite", "Postman", "formspree.io"],
+      skills: ["Git", "Notion", "Vite", "Postman", "formspree.io"],
       color: "orange"
     }
   ];
@@ -42,7 +42,7 @@ const SkillsSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
           <h2 className="text-5xl font-black tracking-tight underline underline-offset-8 decoration-primary/30">Skills.</h2>
           <p className="text-muted-foreground text-lg">
-            A comprehensive toolkit focused on building scalable, performant, and user-centric applications.
+            Proficient in the technologies I use daily, including:-
           </p>
         </div>
 

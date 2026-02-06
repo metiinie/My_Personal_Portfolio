@@ -46,7 +46,7 @@ const HeroSection = () => {
           <div className="flex-1 text-left space-y-8 animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-morphism border-primary/20 text-primary text-sm font-semibold tracking-wide animate-fade-in">
               <Sparkles className="h-4 w-4" />
-              <span>Orion🌙 Innovation Solution</span>
+              <span>Orion Innovation Solution</span>
             </div>
 
             <div className="space-y-10 mb-8">
