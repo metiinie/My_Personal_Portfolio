@@ -185,18 +185,20 @@ const ProjectsSection = () => {
         {/* Call to Action */}
         <div className="mt-24 text-center animate-fade-up">
           <div className="glass-morphism p-10 rounded-[3rem] border-white/10 max-w-4xl mx-auto relative overflow-hidden group">
-            <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <h3 className="text-2xl md:text-3xl font-black mb-4">Want to see more technical details?</h3>
-            <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-              Check out my GitHub for more open-source contributions, <br className="hidden md:block" />
-              system architectures, and experimental projects.
-            </p>
-            <Button size="lg" className="rounded-full px-10 h-14 bg-primary text-white font-bold hover:scale-105 transition-transform shadow-xl shadow-primary/20" asChild>
-              <a href="https://github.com/metiinie" target="_blank" rel="noreferrer">
-                Explore All Repositories
-                <Github className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
+            <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10">
+              <h3 className="text-2xl md:text-3xl font-black mb-4">Want to see more technical details?</h3>
+              <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
+                Check out my GitHub for more open-source contributions, <br className="hidden md:block" />
+                system architectures, and experimental projects.
+              </p>
+              <Button size="lg" className="rounded-full px-10 h-14 bg-primary text-white font-bold hover:scale-105 transition-transform shadow-xl shadow-primary/20" asChild>
+                <a href="https://github.com/metiinie" target="_blank" rel="noreferrer">
+                  Explore All Repositories
+                  <Github className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
